@@ -15,13 +15,15 @@
         <header>
             <div class="navbar"> 
                 <img class="logo"src="/icons/logo.png" alt="Logo">
-                <div class="navbar__wrap">
+                <input type="checkbox" id="menu__checkbox">
+                <nav class="navbar__wrap">
+                    <label for="menu__checkbox" class="toggle__bnt" data-open="MENU" data-close="CLOSE" onclick></label>
                     <ul class="nav__links">
                         <li><a href="index.html">Главная страница</a></li>
                         <li><a href="Converter.html">Конвертер величин</a></li>
                         <li><a href="#">Избранное</a></li>
                     </ul>
-                </div>
+                </nav>
                 <button class = "btn1" type = "button">Вход</button>
             </div>
         </header>
