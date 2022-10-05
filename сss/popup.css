@@ -1,0 +1,84 @@
+
+#modal__label {
+    color: #ffffff;
+    opacity: 0.6;
+    background-color: transparent;
+    cursor: pointer;
+}
+#modal__label:hover{
+    opacity: 1;
+}
+.popup__form {
+    box-sizing: border-box;
+    width: 380px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: .5s all;
+    background: #e0dbd428;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+    align-items:stretch;
+    /* display: none; */
+}
+
+.popup__form span {
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+}
+
+.popup__input {
+    height: 25px;
+    width: 100%;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.25);
+    border:none;
+    margin: 0 auto;
+}
+.wrapper__checkbox {
+    text-align:left;
+}
+.popup__form h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+#submit {
+    background: #FEFEFE;
+    box-shadow: 6px 6px 7px rgba(181, 181, 210, 0.75), -3px -3px 10px rgba(255, 255, 255, 0.84);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #FFFFFF;
+    width: 150px;
+    height: 35px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#registr {
+    cursor:pointer;
+}
+
+#registr:hover {
+    text-decoration: underline;
+}
+
+#modal__checkbox {
+    display: none;
+}
+
+#close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 26px;
+    transform: rotate(45deg);
+}
