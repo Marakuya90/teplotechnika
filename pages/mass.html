@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="/сss/normalize.css">
     <link rel="stylesheet" href="/сss/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/convert.js" defer></script>
 </head>
 <body>
@@ -29,7 +30,6 @@
         </header>
         <div class="main">
             <div class="main__header">
-                <h1>Вес, масса</h1>
                 <h2>Unit С<span class = "orange__sine">o</span>nverter</h2>
             </div>
             <div class="wrap__conteiner">
@@ -45,35 +45,18 @@
                             <div class="arrow"></div>
                             <li><a class="link__convert-nav" href="/pages/converter.html">Конвертер величин</a></li>
                             <div class="arrow"></div>
-                            <li><a class = "link__convert-nav" href="/pages/weight.html">Вес, масса</a></li>
+                            <li class="dynamic_link"></li>
                         </ul>
                     </nav>
-                    <h3>Мгновенный перевод единиц весса и массы</h3>
+                    <h3>Мгновенный перевод единиц</h3>
                     <div class="form__convert">
                         <form action="#">
                             <div class="wrap">
-                                <label class="label__convert" for="">Килотонна<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Тонна (т)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Килоньютон (кН)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Метрический центнер<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Килограмм (кг)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Центнер<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Метрический квинтал<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Грамм (г)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Миллиграм (мг)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Микрограмм<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Фунт<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Унция<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Карат (сt)<input class = "input__convert" type="text"></label>
-                                <label class="label__convert" for="">Ньютон(Н)<input class = "input__convert" type="text"></label>
                             </div>
-                            <div>
-                                <button type="reset" class = "btn2" id = "btn__clear">Очистить</button>
-                            </div>
+                            <button type="reset" class = "btn2" id = "btn__clear">Очистить</button>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     <footer>
