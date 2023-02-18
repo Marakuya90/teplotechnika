@@ -204,7 +204,7 @@ footer {
 #modal__label:hover{
     opacity: 1;
 }
-.popup__form {
+.modal__form {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -216,17 +216,17 @@ footer {
     background-color:#fff;
     border:1px solid rgba(0,0,0,.2);
     border-radius:4px;
-    max-height:80vh;
+    max-height:93vh;
     overflow-y:auto;
     box-sizing:border-box;
     gap: 41px;
 }
-.popup__form span {
+.modal__form span {
     font-weight: 200;
     font-size: 27px;
     text-align: center;
 }
-.popup__input {
+.modal__input {
     height: 46px;
     width: 100%;
     box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.25);
@@ -238,13 +238,17 @@ footer {
     text-align:left;
     font-size: 21px;
 }
-.popup__form h3 {
+.modal__form h3 {
     margin: 0;
     font-size: 40px;
     line-height: 36px;
     text-align: center;
 }
-#submit {
+.modal__form p{
+    text-align: center;
+    margin: 0x;
+}
+#submit, #submit__reg {
     background: #FEFEFE;
     box-shadow: 6px 6px 7px rgba(181, 181, 210, 0.75), -3px -3px 10px rgba(244, 244, 247, 0.75);
     border-radius: 6px;
@@ -257,7 +261,12 @@ footer {
     cursor: pointer;
 }
 #registr {
-    cursor:pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
 }
 #registr:hover {
     text-decoration: underline;
@@ -265,7 +274,7 @@ footer {
 #modal__checkbox {
     display: none;
 }
-#close {
+.close {
     position: absolute;
     top: 15px;
     right: 25px;

@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="wrapper">
+        <!--Header-->
         <header>
             <div class="navbar"> 
                 <img class="logo"src="/icons/logo.png" alt="Logo">
@@ -24,41 +25,70 @@
                         <li><a href="#">Избранное</a></li>
                     </ul>
                 </nav>
-                <button class = "btn1" type = "button">Вход</button>
+                <button class = "func__btn btn1" type = "button">Вход</button>
             </div>
         </header>
         <!--Основной блок-->
         <div class="main">
             <div class="main__header">
-            <h1>Тепл<span class = "orange__sine">о</span>техника</h1>
-        </div>
+                <h1>Тепл<span class="orange__sine">о</span>техника</h1>
+            </div>
             <div class="main__conteiner"></div>
         </div>
+        <!--Footer-->
     <footer>
         <p>2022г</p>
-    </footer> 
+    </footer>
+    <!--Modal Input Form-->
     </div>
     <div class="modal">
         <div class="modal__dialog">
-            <!-- <div class="modal__content"> -->
-                <form action="" class="popup__form">
+            <div class ="inputform">
+                <form action="" class="modal__form">
                     <h3>Вход</h3>
                     <div class="div">
                         <span>Ваш e-mail или логин</span>
-                        <input type="e-mail" class="popup__input">
+                        <input type="e-mail" class="modal__input">
                     </div>
                     <div>
                         <span>Ваш пароль</span>
-                        <input type="password" class="popup__input">
+                        <input type="password" class="modal__input">
                     </div>
                     <div class="wrapper__checkbox">
                         <input type="checkbox" id="check">
                         <label for="check">Запомнить меня</label>
                     </div>
                     <input type="submit" name="submit" value="Войти" id="submit">
-                    <span id="registr">Зарегистрироваться</span>
-                    <label id="close">+</label>
+                    <button id="registr">Зарегистрироваться</button>
+                    <label class="close">+</label>
                 </form>
+            </div>
+            <!--Registration Form-->
+            <div class="registration hide">
+                <form action="" class="modal__form">
+                    <h3>Регистрация</h3>
+                    <div class="div">
+                        <span>Ваш логин</span>
+                        <input type="text" class="modal__input">
+                    </div>
+                    <div class="div">
+                        <span>Ваш e-mail</span>
+                        <input type="e-mail" class="modal__input">
+                    </div>
+                    <div class="div">
+                        <span>Ваш пароль</span>
+                        <input type="password" class="modal__input">
+                    </div>
+                    <div>
+                        <span>Повторите пароль</span>
+                        <input type="password" class="modal__input">
+                    </div>
+                    <input type="submit" name="submit_reg" value="Регистрация" id="submit__reg">
+                    <p>Уже зарегистрированы?</p>
+                    <span><a class="func__btn" href="">Войти</a></span>
+                    <label class="close">+</label>
+                </form>
+            </div>
         </div>
     </div>
     <script src="/script.js"></script>
